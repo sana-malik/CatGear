@@ -5,7 +5,7 @@ function parseData(data) {
 	var dataObjs = [];
 	$.each(data, function(index, obj) {
 		var tmp = {};
-		tmp["time"] = moment(obj["time"], "YYYY-MM-DDTHH:mm:ssZ").toDate();
+		tmp["time"] = moment(obj["time"], "YYYY-MM-DDTHH:mm:ssZ");
 		tmp["oranges"] = obj["oranges"];
 		tmp["greyest"] = obj["greyest"];
 		dataObjs.push(tmp);
@@ -22,4 +22,12 @@ $(document).ready(function() {
 			.points(data)
 			.paths(locations)
 			.runAnimation();
+
+	$("#speed_up").on("click", function() {
+		cattracks.speed_up();
+	})
+
+	$("#slow_down").on("click", function() {
+		cattracks.slow_down();
+	})
 });

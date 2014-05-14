@@ -1,4 +1,5 @@
 body {
+	font-family: 'Helvetica', sans-serif;
 	margin: 0px; padding: 0px;
 	background-color: #fdfeff;
 }
@@ -43,4 +44,19 @@ body {
 
 .valid-time {
 	fill: #CCC;
+}
+
+#controls {
+	display: inline-block;
+}
+
+#timestamp {
+	display: inline-block;
+	font-size: 2em;
+}
+
+#top-bar {
+	text-align: center;
+	width: 600px;
+	margin: 0 auto;
 }
