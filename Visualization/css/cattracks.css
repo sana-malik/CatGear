@@ -1,0 +1,46 @@
+body {
+	margin: 0px; padding: 0px;
+	background-color: #fdfeff;
+}
+
+#main {
+	background-image: url('../images/floorplan.jpg');
+	background-repeat: no-repeat;
+	background-size: 1400px 894px;
+	background-position: top center;
+	width: 1400px; height: 934px;
+	margin: 0 auto;
+}
+
+#start_animation {
+	position: absolute;
+	top: 10px; left: 10px;
+}
+
+#oranges {
+	fill: #F90;
+}
+
+#greyest {
+	fill: #999;
+}
+
+#timeMarker {
+	stroke: #000;
+	fill: #FFF;
+}
+
+.axis text {
+  font: 10px sans-serif;
+}
+
+.axis line,
+.axis path {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+.valid-time {
+	fill: #CCC;
+}
