@@ -83,7 +83,7 @@ d3.cattracks = function() {
 
   cattracks.runAnimation = function(_) {
     // remove old
-    d3.selectAll("circle.cat").remove();
+    d3.selectAll(".cat").remove();
     d3.select("#timeMarker").remove();
 
     // place time marker
@@ -96,17 +96,28 @@ d3.cattracks = function() {
     $("#timestamp").text(points[index]["time"].format("MMMM Do YYYY, h:mm a"));
 
     // place cat markers
-    var oranges = svg.append("circle")
+    var oranges = svg.append("g")
       .attr("id", "oranges")
       .attr("class", "cat")
-      .attr("r", 7)
       .attr("transform", "translate(" + paths[points[index]["oranges"]]["location"] + ")");
 
-    var greyest = svg.append("circle")
+    oranges.append("svg:image")
+      .attr('width', 30)
+      .attr('height', 30)
+      .attr("xlink:href","images/orange-paw.png");
+
+    var greyest = svg.append("g")
       .attr("id", "greyest")
       .attr("class", "cat")
-      .attr("r", 7)
       .attr("transform", "translate(" + paths[points[index]["greyest"]]["location"] + ")");
+
+
+    greyest.append("svg:image")
+      .attr('width', 30)
+      .attr('height', 30)
+      .attr('x', -31)
+      .attr('y', -31)
+      .attr("xlink:href","images/grey-paw.png");
   
     transition();
   

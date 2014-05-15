@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Cat Tracker</string>
+    <string name="Location">Location</string>
+    <string name="action_settings">Settings</string>
+    <string name="START">START</string>
+    <string name="STOP">STOP</string>
+
+</resources>

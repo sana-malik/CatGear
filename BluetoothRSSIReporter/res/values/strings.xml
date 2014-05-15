@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Bluetooth RSSI Reporter</string>
+    <string name="Location">Location</string>
+    <string name="action_settings">Settings</string>
+    <string name="Button">Scan Devices</string>
+
+</resources>
